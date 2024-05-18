@@ -162,3 +162,5 @@ cython_debug/
 # others
 *.xlsx
 *.docx
+credentials.json
+*temp*
