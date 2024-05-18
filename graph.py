@@ -14,6 +14,7 @@ import pandas as pd
 from scipy.spatial.distance import pdist, squareform
 from itertools import combinations
 import random
+import os
 
 def instantiate_geocoder():
 	with open("credentials.json") as f:
@@ -83,9 +84,9 @@ def build_full_distance_matrix(coordinates, batch_size=10):
 
 	return distance_matrix
 
-def build_graph(coordinates, distance_matrix, df, k, outlier_thresh=3):
+def filter_outliers(coordinates, df, outlier_thresh=3):
 	towns = df["Municipi"].tolist()
-
+	
 	# Step 1: Identify outliers using Z-score
 	coordinates_np = np.array(coordinates)
 	z_scores = np.abs(stats.zscore(coordinates_np))
@@ -94,7 +95,15 @@ def build_graph(coordinates, distance_matrix, df, k, outlier_thresh=3):
 	# Step 2: Filter coordinates and towns
 	filtered_coordinates = [coord for i, coord in enumerate(coordinates) if not outliers[i]]
 	filtered_towns = [town for i, town in enumerate(towns) if not outliers[i]]
+	outlier_towns = [town for i, town in enumerate(towns) if outliers[i]]
+	return filtered_coordinates, filtered_towns, outliers
 
+def build_graph(coordinates, distance_matrix, df, k, outlier_thresh=3):
+	towns = df["Municipi"].tolist()
+
+	# Step 1: Filter out outliers
+	filtered_coordinates, filtered_towns, outliers = filter_outliers(coordinates, distance_matrix, df, outlier_thresh)
+	
 	# Step 3: Filter distance matrix
 	filtered_indices = [i for i in range(len(towns)) if not outliers[i]]
 	filtered_distance_matrix = distance_matrix[np.ix_(filtered_indices, filtered_indices)]
@@ -251,14 +260,15 @@ def two_opt(tour, complete_G):
 	return best_tour
 
 # Plotting function
-def plot_graph(nodes, edges_gdf, min_x, max_x, min_y, max_y, hamiltonian_path, pos):
-	fig, ax = plt.subplots(1, 1, figsize=(10, 10))
-	world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
-
-	# Plot base map within the bounds of the coordinates
-	world.boundary.plot(ax=ax, linewidth=1)
-	ax.set_xlim(min_x - 0.5, max_x + 0.5)  # Adding a small buffer for better visualization
-	ax.set_ylim(min_y - 0.5, max_y + 0.5)
+def plot_graph(nodes, edges_gdf, min_x, max_x, min_y, max_y, hamiltonian_path, pos, ax=None, color="red"):
+	if ax is None:
+		fig, ax = plt.subplots(1, 1, figsize=(10, 10))
+		world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+		world.boundary.plot(ax=ax, linewidth=1)
+		ax.set_xlim(min_x - 0.1, max_x + 0.1)  # Adding a small buffer for better visualization
+		ax.set_ylim(min_y - 0.1, max_y + 0.1)
+	else:
+		fig = plt.gcf()
 
 	# Plot edges
 	edges_gdf.plot(ax=ax, linewidth=0.2, edgecolor='gray')
@@ -274,78 +284,120 @@ def plot_graph(nodes, edges_gdf, min_x, max_x, min_y, max_y, hamiltonian_path, p
 	start_point = hamiltonian_path[0]
 	end_point = hamiltonian_path[-1]
 
-	ax.scatter([pos[start_point][0]], [pos[start_point][1]], color='green', s=100, zorder=5, label='Start Point')
-	ax.scatter([pos[end_point][0]], [pos[end_point][1]], color='blue', s=100, zorder=5, label='End Point')
+	ax.scatter([pos[start_point][0]], [pos[start_point][1]], color='blue', s=100, zorder=5, label='Start Point')
+	# ax.scatter([pos[end_point][0]], [pos[end_point][1]], color='blue', s=100, zorder=5, label='End Point')
 
 	# Plot the tour with direction arrows
 	for i in range(len(hamiltonian_path) - 1):
 		u, v = hamiltonian_path[i], hamiltonian_path[i + 1]
 		line = LineString([Point(pos[u]), Point(pos[v])])
-		gpd.GeoSeries([line]).plot(ax=ax, color='red')
+		gpd.GeoSeries([line]).plot(ax=ax, color=color)
 
 		# Draw arrow
 		ax.annotate(
 			'',
 			xy=(pos[v][0], pos[v][1]),
 			xytext=(pos[u][0], pos[u][1]),
-			arrowprops=dict(arrowstyle="->", color='red', lw=1),
+			arrowprops=dict(arrowstyle="->", color=color, lw=1),
 			size=15
 		)
 
-	plt.xlabel('Longitude')
-	plt.ylabel('Latitude')
-	plt.title('Graph of Towns with TSP Tour')
-	plt.legend()
-	plt.show()
+	return fig, ax
 
 
 def main(plot=False):
 	# Load the data
 	df2 = pd.read_csv('data/Dades_Municipis_Lot_2.csv')
+	blocks = df2['BLOC'].unique()
+	df2_blocks = [df2[df2["BLOC"] == i] for i in blocks]
+	start = random.choice(df2[df2["BLOC"] == 1]['Municipi'].tolist())
+	start_row = df2[df2['Municipi'] == start]
+	for i, block in enumerate(df2_blocks[1:], start=1):
+		# append start to each block
+		block = pd.concat([start_row, block], ignore_index=True)
+		df2_blocks[i] = block
+	df2 = pd.concat(df2_blocks, ignore_index=True)
 
 	# Get coordinates for each town
-	coordinates2 = apply_coordinates(df2)
+	# coordinates2 = apply_coordinates(df2)
+	coordinates2 = [[eval(i) for i in block['coordinates'].to_list()] for block in df2_blocks]
 
 	# Build the full distance matrix
-	distance_matrix2 = build_full_distance_matrix(coordinates2)
+	distance_matrices2 = []
+	for i, block in enumerate(df2_blocks):
+		if os.path.exists(f'data/distance_matrix2_{i}.npy'):
+			distance_matrix2 = np.load(f'data/distance_matrix2_{i}.npy')
+		else:
+			distance_matrix2 = build_full_distance_matrix(coordinates2[i])
+			np.save(f'data/distance_matrix2_{i}.npy', distance_matrix2)
+		distance_matrices2.append(distance_matrix2)
+	# if os.path.exists('data/distance_matrix2.npy'):
+	# 	distance_matrix2 = np.load('data/distance_matrix2.npy')
+	# else:
+	# 	distance_matrix2 = build_full_distance_matrix(coordinates2)
+	# 	np.save('data/distance_matrix2.npy', distance_matrix2)
 
-	# Build the graph
 	k = 3
-	G2, pos2, filtered_towns2, filtered_coordinates2 = build_graph(coordinates2, distance_matrix2, df2, k)
+	merged_coordinates2 = [coord for block in coordinates2 for coord in block]
+	filtered_coordinates2_, filtered_towns2_, _ = filter_outliers(merged_coordinates2, df2)
+	filtered_towns2, filtered_coordinates2 = [], []
+	for i, block in enumerate(df2_blocks):
+		filtered_towns2.append([town for town in filtered_towns2_ if town in block['Municipi'].tolist()])
+		filtered_coordinates2.append([coord for coord in filtered_coordinates2_ if coord in coordinates2[i]])
+	# G2, pos2, filtered_towns2, filtered_coordinates2 = build_graph(coordinates2, distance_matrix2, df2, k)
 
-	filtered_distance_matrix2 = squareform(pdist(filtered_coordinates2, metric='euclidean'))
+	filtered_distance_matrix2 = []
+	for i, block in enumerate(df2_blocks):
+		filtered_distance_matrix2_block = squareform(pdist(filtered_coordinates2[i], metric='euclidean'))	
+		filtered_distance_matrix2.append(filtered_distance_matrix2_block)
+	# filtered_distance_matrix2 = squareform(pdist(filtered_coordinates2, metric='euclidean'))
 
-	G2, pos = create_knn_graph(filtered_towns2, filtered_coordinates2, filtered_distance_matrix2, k)
+	G2, pos2 = [], []
+	for i, block in enumerate(df2_blocks):
+		G2_block, pos2_block = create_knn_graph(filtered_towns2[i], filtered_coordinates2[i], filtered_distance_matrix2[i], k)
+		G2.append(G2_block)
+		pos2.append(pos2_block)
+	# G2, pos2 = create_knn_graph(filtered_towns2, filtered_coordinates2, filtered_distance_matrix2, k)
 
-	start = random.choice(filtered_towns2)
-	initial_tour2 = nearest_neighbor_algorithm(G2, start)
-	 
-	complete_G2 = create_complete_graph(G2)
-	
-	optimized_tour2 = two_opt(initial_tour2, complete_G2)
-	
-	nodes2 = gpd.GeoDataFrame({
-		'town': filtered_towns2,
-		'geometry': [Point(lon, lat) for lon, lat in filtered_coordinates2]
-	})
-	 
-	edges2 = []
-	for u, v, data in G2.edges(data=True):
-		line = LineString([Point(pos[u]), Point(pos[v])])
-		edges2.append({'source': u, 'target': v, 'weight': data['weight'], 'geometry': line})
+	tours = []
+	for i, block in enumerate(df2_blocks):
+		tour = nearest_neighbor_algorithm(G2[i], start)
+		complete_G2 = create_complete_graph(G2[i])
+		optimized_tour = two_opt(tour, complete_G2)
+		tours.append(optimized_tour)
+	# initial_tour2 = nearest_neighbor_algorithm(G2, start)
+	# complete_G2 = create_complete_graph(G2)
+	# optimized_tour2 = two_opt(initial_tour2, complete_G2)
 
-	edges_gdf2 = gpd.GeoDataFrame(edges2)
-
-	town_to_coordinates2 = dict(zip(df2['Municipi'], df2['coordinates']))
-	towns2 = df2["Municipi"].tolist()
-	ordered_coordinates2 = [town_to_coordinates2[town] for town in towns2]
+	town_to_coordinates2_ = {town: coord for town, coord in zip(filtered_towns2_, filtered_coordinates2_)}
+	town_to_coordinates2, ordered_coordinates2 = [], []
+	for i, block in enumerate(df2_blocks):
+		# town_to_coordinates2_block = dict(zip(df2_blocks[i]['Municipi'], filtered_coordinates2[i]))
+		town_to_coordinates2_block = {town: coord for town, coord in town_to_coordinates2_.items() if town in filtered_towns2[i]}
+		ordered_coordinates2_block = [town_to_coordinates2_block[town] for town in filtered_towns2[i]]
+		town_to_coordinates2.append(town_to_coordinates2_block)
+		ordered_coordinates2.append(ordered_coordinates2_block)
+	# town_to_coordinates2 = dict(zip(df2['Municipi'], coordinates2))
+	# ordered_coordinates2 = [town_to_coordinates2[town] for town in filtered_towns2]
 
 	# Plot the graph on a map
 	if plot:
-		min_x = min(coord[0] for coord in filtered_coordinates2)
-		max_x = max(coord[0] for coord in filtered_coordinates2)
-		min_y = min(coord[1] for coord in filtered_coordinates2)
-		max_y = max(coord[1] for coord in filtered_coordinates2)
-		plot_graph(nodes2, edges_gdf2, min_x, max_x, min_y, max_y, optimized_tour2)
+		all_cordinates = [coord for block in ordered_coordinates2 for coord in block]
+		min_x = min(coord[0] for coord in all_cordinates)
+		max_x = max(coord[0] for coord in all_cordinates)
+		min_y = min(coord[1] for coord in all_cordinates)
+		max_y = max(coord[1] for coord in all_cordinates)
 
+		fig, ax = None, None
+		colors = ['red', 'blue', 'green', 'orange']
+		for i, block in enumerate(df2_blocks):
+			edges_gdf2, nodes2 = build_geodataframes(G2[i], pos2[i], filtered_towns2[i], filtered_coordinates2[i])
+			fig, ax = plot_graph(nodes2, edges_gdf2, min_x, max_x, min_y, max_y, tours[i], pos2[i], ax=ax, color=colors[i])
+
+		# plot_graph(nodes2, edges_gdf2, min_x, max_x, min_y, max_y, optimized_tour2, pos2)
+		plt.xlabel('Longitude')
+		plt.ylabel('Latitude')
+		plt.title('Graph of Towns with TSP Tour')
+		# plt.legend()
+		plt.show()
 	return ordered_coordinates2
