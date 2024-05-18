@@ -164,3 +164,4 @@ cython_debug/
 *.docx
 credentials.json
 *temp*
+*npy
