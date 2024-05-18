@@ -1,104 +1,104 @@
-LOTE,BLOC,COMARCA,codINE,Municipi,Pob.,Estancia Minima
-2,1,Anoia,8036,Calonge de Segarra,195,30 MINUTOS
-2,1,Anoia,8060,Castellfollit de Riubregós,159,30 MINUTOS
-2,1,Anoia,8170,Prats de Rei,554,1 HORA
-2,1,Anoia,8176,Pujalt,204,30 MINUTOS
-2,1,Anoia,8189,Sant Pere Sallavinera,167,30 MINUTOS
-2,1,Anoia,8228,Sant Martí Sesgueioles,361,1 HORA
-2,1,Anoia,8008,Argençola,216,30 MINUTOS
-2,1,Anoia,8071,Copons,333,1 HORA
-2,1,Anoia,8103,Jorba,806,1 HORA
-2,1,Anoia,8133,Montmaneu,166,30 MINUTOS
-2,1,Anoia,8185,Rubió,244,30 MINUTOS
-2,1,Anoia,8297,Veciana,182,30 MINUTOS
-2,1,Anoia,8021,Bellprat,74,30 MINUTOS
-2,1,Anoia,8025,Bruc,2218,1 HORA
-2,1,Anoia,8063,Castellolí,636,1 HORA
-2,1,Anoia,8152,Orpí,159,30 MINUTOS
-2,1,Anoia,8257,Santa Maria de Miralles,138,30 MINUTOS
-2,1,Anoia,8028,Cabrera d'Anoia,1606,1 HORA
-2,1,Anoia,8286,Torre de Claramunt,3966,1 HORA
-2,1,Anoia,8292,Vallbona d'Anoia,1387,1 HORA
-2,1,Anoia,8104,Llacuna,942,1 HORA
-2,1,Conca Barb.,43046,Conesa,109,30 MINUTOS
-2,1,Conca Barb.,43073,Llorac,96,30 MINUTOS
-2,1,Conca Barb.,43101,Passanant i Belltall,170,30 MINUTOS
-2,1,Conca Barb.,43105,Piles,224,30 MINUTOS
-2,1,Conca Barb.,43143,Savallà del Comtat,52,30 MINUTOS
-2,1,Conca Barb.,43159,Vallfogona de Riucorb,89,30 MINUTOS
-2,1,Conca Barb.,43061,Forès,48,30 MINUTOS
-2,1,Conca Barb.,43130,Rocafort de Queralt,241,30 MINUTOS
-2,1,Anoia,8048,Carme,754,1 HORA
-2,2,Alt Penedès,8122,Mediona,2517,1 HORA
-2,2,Alt Penedès,8085,Font-rubí,1446,1 HORA
-2,2,Alt Penedès,8168,Pontons,507,1 HORA
-2,2,Alt Penedès,8288,Torrelles de Foix,2557,1 HORA
-2,2,Alt Penedès,8027,Cabanyes,999,1 HORA
-2,2,Alt Penedès,8154,Pacs del Penedès,935,1 HORA
-2,2,Alt Penedès,8206,Sant Cugat Sesgarrigues,1009,1 HORA
-2,2,Alt Penedès,8249,Santa Fe del Penedès,370,1 HORA
-2,2,Alt Penedès,8304,Vilobí del Penedès,1.13,1 HORA
-2,2,Alt Penedès,8058,Castellet i la Gornal,2474,1 HORA
-2,2,Baix Penedès,43002,Albinyana,2581,1 HORA
-2,2,Baix Penedès,43030,Bonastre,742,1 HORA
-2,2,Baix Penedès,43140,Santa Oliva,3.56,1 HORA
-2,2,Garraf,8148,Olivella,4339,1 HORA
-2,2,Alt Penedès,8146,Olesa de Bonesvalls,2016,1 HORA
-2,2,Alt Penedès,8174,Puigdàlber,555,1 HORA
-2,2,Alt Penedès,8222,Sant Llorenç d'Hortons,2503,1 HORA
-2,2,Alt Penedès,8273,Subirats,3241,1 HORA
-2,2,Alt Penedès,8287,Torrelavit,1457,1 HORA
-2,2,Baix Penedès,43079,Masllorenç,547,1 HORA
-2,2,Baix Penedès,43090,Montmell,1863,1 HORA
-2,2,Tarragonès,43135,Salomó,543,1 HORA
-2,2,Tarragonès,43164,Vespella de Gaià,496,1 HORA
-2,3,Conca Barb.,43029,Blancafort,394,1 HORA
-2,3,Conca Barb.,43107,Pira,489,1 HORA
-2,3,Conca Barb.,43146,Senan,44,30 MINUTOS
-2,3,Alt Camp,43001,Aiguamúrcia,961,1 HORA
-2,3,Alt Camp,43036,Cabra del Camp,1254,1 HORA
-2,3,Alt Camp,43120,Querol,572,1 HORA
-2,3,Conca Barb.,43141,Pontils,133,30 MINUTOS
-2,3,Alt Camp,43059,Figuerola del Camp,332,1 HORA
-2,3,Alt Camp,43089,Montferri,419,1 HORA
-2,3,Alt Camp,43132,Rodonyà,506,1 HORA
-2,3,Conca Barb.,43158,Vallclara,88,30 MINUTOS
-2,3,Conca Barb.,43168,Vilanova de Prades,107,30 MINUTOS
-2,3,Alt Camp,43091,Mont-ral,173,30 MINUTOS
-2,3,Alt Camp,43124,Riba,552,1 HORA
-2,3,Conca Barb.,43172,Vilaverd,453,1 HORA
-2,3,Alt Camp,43066,Garidells,196,30 MINUTOS
-2,3,Alt Camp,43080,Masó,285,1 HORA
-2,3,Alt Camp,43083,Milà,189,30 MINUTOS
-2,3,Alt Camp,43160,Vallmoll,1882,1 HORA
-2,3,Alt Camp,43010,Alió,496,1 HORA
-2,3,Alt Camp,43034,Bràfim,687,1 HORA
-2,3,Alt Camp,43119,Puigpelat,1199,1 HORA
-2,3,Alt Camp,43165,Vilabella,711,1 HORA
-2,3,Alt Camp,43098,Nulles,541,1 HORA
-2,3,Alt Camp,43134,Rourell,395,1 HORA
-2,4,Baix Camp,43017,Argentera,126,30 MINUTOS
-2,4,Baix Camp,43033,Botarell,1102,1 HORA
-2,4,Baix Camp,43045,Colldejou,172,30 MINUTOS
-2,4,Baix Camp,43118,Pratdip,693,1 HORA
-2,4,Baix Camp,43127,Riudecanyes,1279,1 HORA
-2,4,Baix Camp,43167,Vilanova d'Escornalbou,594,1 HORA
-2,4,Baix Camp,43007,Aleixar,924,1 HORA
-2,4,Baix Camp,43009,Alforja,1928,1 HORA
-2,4,Baix Camp,43053,Duesaigües,232,30 MINUTOS
-2,4,Baix Camp,43081,Maspujols,859,1 HORA
-2,4,Baix Camp,43128,Riudecols,1198,1 HORA
-2,4,Baix Camp,43015,Arbolí,122,30 MINUTOS
-2,4,Baix Camp,43039,Capafonts,121,30 MINUTOS
-2,4,Baix Camp,43057,Febró,39,30 MINUTOS
-2,4,Baix Camp,43169,Vilaplana,540,1 HORA
-2,4,Baix Camp,43003,Albiol,528,1 HORA
-2,4,Baix Camp,43011,Almoster,1334,1 HORA
-2,4,Tarragonès,43103,Perafort,1292,1 HORA
-2,4,Tarragonès,43109,Pobla de Mafumet,4052,1 HORA
-2,4,Tarragonès,43166,Vilallonga del Camp,2398,1 HORA
-2,4,Tarragonès,43097,Nou de Gaià,636,1 HORA
-2,4,Tarragonès,43126,Riera de Gaià,1752,1 HORA
-2,4,Tarragonès,43043,Catllar,4921,1 HORA
-2,4,Tarragonès,43144,Secuita,1765,1 HORA
-2,4,Tarragonès,43122,Renau,152,30 MINUTOS
+LOTE,BLOC,COMARCA,codINE,Municipi,Pob.,Estancia Minima,coordinates
+2,1,Anoia,8036,Calonge de Segarra,195.0,30 MINUTOS,"[1.4820028, 41.7642502]"
+2,1,Anoia,8060,Castellfollit de Riubregós,159.0,30 MINUTOS,"[1.4383714, 41.7762237]"
+2,1,Anoia,8170,Prats de Rei,554.0,1 HORA,"[1.5412363, 41.7056641]"
+2,1,Anoia,8176,Pujalt,204.0,30 MINUTOS,"[1.4211325, 41.7169947]"
+2,1,Anoia,8189,Sant Pere Sallavinera,167.0,30 MINUTOS,"[1.5745225, 41.7365708]"
+2,1,Anoia,8228,Sant Martí Sesgueioles,361.0,1 HORA,"[1.4882003, 41.7021286]"
+2,1,Anoia,8008,Argençola,216.0,30 MINUTOS,"[1.4433782, 41.5977099]"
+2,1,Anoia,8071,Copons,333.0,1 HORA,"[1.5179333, 41.6363657]"
+2,1,Anoia,8103,Jorba,806.0,1 HORA,"[1.547408, 41.6014534]"
+2,1,Anoia,8133,Montmaneu,166.0,30 MINUTOS,"[1.4147627, 41.6259778]"
+2,1,Anoia,8185,Rubió,244.0,30 MINUTOS,"[1.5701167, 41.6442397]"
+2,1,Anoia,8297,Veciana,182.0,30 MINUTOS,"[1.4885194, 41.6559029]"
+2,1,Anoia,8021,Bellprat,74.0,30 MINUTOS,"[1.4335846, 41.5174829]"
+2,1,Anoia,8025,Bruc,2218.0,1 HORA,"[2.5001824, 41.694367]"
+2,1,Anoia,8063,Castellolí,636.0,1 HORA,"[1.7002468, 41.5981563]"
+2,1,Anoia,8152,Orpí,159.0,30 MINUTOS,"[1.5755145, 41.5185604]"
+2,1,Anoia,8257,Santa Maria de Miralles,138.0,30 MINUTOS,"[1.5282249, 41.5004287]"
+2,1,Anoia,8028,Cabrera d'Anoia,1606.0,1 HORA,"[1.7042442, 41.4774648]"
+2,1,Anoia,8286,Torre de Claramunt,3966.0,1 HORA,"[1.6609381, 41.5352891]"
+2,1,Anoia,8292,Vallbona d'Anoia,1387.0,1 HORA,"[1.7082922, 41.5194769]"
+2,1,Anoia,8104,Llacuna,942.0,1 HORA,"[2.1976986, 41.3993586]"
+2,1,Conca Barb.,43046,Conesa,109.0,30 MINUTOS,"[1.2913382, 41.5190356]"
+2,1,Conca Barb.,43073,Llorac,96.0,30 MINUTOS,"[1.3071491, 41.5561484]"
+2,1,Conca Barb.,43101,Passanant i Belltall,170.0,30 MINUTOS,"[1.19646, 41.5319348]"
+2,1,Conca Barb.,43105,Piles,224.0,30 MINUTOS,"[-0.1325845, 38.9407693]"
+2,1,Conca Barb.,43143,Savallà del Comtat,52.0,30 MINUTOS,"[1.2997894, 41.5428139]"
+2,1,Conca Barb.,43159,Vallfogona de Riucorb,89.0,30 MINUTOS,"[1.2363297, 41.5632199]"
+2,1,Conca Barb.,43061,Forès,48.0,30 MINUTOS,"[1.2378499, 41.4941385]"
+2,1,Conca Barb.,43130,Rocafort de Queralt,241.0,30 MINUTOS,"[1.2813851, 41.4784492]"
+2,1,Anoia,8048,Carme,754.0,1 HORA,"[1.6198579, 41.5319058]"
+2,2,Alt Penedès,8122,Mediona,2517.0,1 HORA,"[1.6350185, 41.4773943]"
+2,2,Alt Penedès,8085,Font-rubí,1446.0,1 HORA,"[1.5878667, 41.4365689]"
+2,2,Alt Penedès,8168,Pontons,507.0,1 HORA,"[1.5140429, 41.4138036]"
+2,2,Alt Penedès,8288,Torrelles de Foix,2557.0,1 HORA,"[1.5723453, 41.387735]"
+2,2,Alt Penedès,8027,Cabanyes,999.0,1 HORA,"[-0.5698989, 39.2908201]"
+2,2,Alt Penedès,8154,Pacs del Penedès,935.0,1 HORA,"[1.6698611, 41.3615067]"
+2,2,Alt Penedès,8206,Sant Cugat Sesgarrigues,1009.0,1 HORA,"[1.7530702, 41.3644619]"
+2,2,Alt Penedès,8249,Santa Fe del Penedès,370.0,1 HORA,"[1.7209214, 41.3844582]"
+2,2,Alt Penedès,8304,Vilobí del Penedès,1.13,1 HORA,"[1.6632965, 41.3875574]"
+2,2,Alt Penedès,8058,Castellet i la Gornal,2474.0,1 HORA,"[1.5917346, 41.2532183]"
+2,2,Baix Penedès,43002,Albinyana,2581.0,1 HORA,"[1.486748, 41.2454739]"
+2,2,Baix Penedès,43030,Bonastre,742.0,1 HORA,"[1.4400593, 41.2211883]"
+2,2,Baix Penedès,43140,Santa Oliva,3.56,1 HORA,"[1.5510139, 41.2532889]"
+2,2,Garraf,8148,Olivella,4339.0,1 HORA,"[1.8114946, 41.3103129]"
+2,2,Alt Penedès,8146,Olesa de Bonesvalls,2016.0,1 HORA,"[1.8492996, 41.3505032]"
+2,2,Alt Penedès,8174,Puigdàlber,555.0,1 HORA,"[1.700349, 41.4045506]"
+2,2,Alt Penedès,8222,Sant Llorenç d'Hortons,2503.0,1 HORA,"[1.8253181, 41.4681755]"
+2,2,Alt Penedès,8273,Subirats,3241.0,1 HORA,"[1.8112496, 41.3951601]"
+2,2,Alt Penedès,8287,Torrelavit,1457.0,1 HORA,"[1.7298578, 41.4463416]"
+2,2,Baix Penedès,43079,Masllorenç,547.0,1 HORA,"[1.4144917, 41.270168]"
+2,2,Baix Penedès,43090,Montmell,1863.0,1 HORA,"[1.4542794, 41.3151822]"
+2,2,Tarragonès,43135,Salomó,543.0,1 HORA,"[1.3747378, 41.2295948]"
+2,2,Tarragonès,43164,Vespella de Gaià,496.0,1 HORA,"[1.3599407, 41.2040993]"
+2,3,Conca Barb.,43029,Blancafort,394.0,1 HORA,"[1.0846694, 41.1274529]"
+2,3,Conca Barb.,43107,Pira,489.0,1 HORA,"[1.2031023, 41.4236202]"
+2,3,Conca Barb.,43146,Senan,44.0,30 MINUTOS,"[1.0874668, 41.4696984]"
+2,3,Alt Camp,43001,Aiguamúrcia,961.0,1 HORA,"[1.3585409, 41.329339]"
+2,3,Alt Camp,43036,Cabra del Camp,1254.0,1 HORA,"[1.2772435, 41.3952451]"
+2,3,Alt Camp,43120,Querol,572.0,1 HORA,"[1.3970189, 41.4234071]"
+2,3,Conca Barb.,43141,Pontils,133.0,30 MINUTOS,"[1.3884066, 41.4774835]"
+2,3,Alt Camp,43059,Figuerola del Camp,332.0,1 HORA,"[1.265571, 41.3720741]"
+2,3,Alt Camp,43089,Montferri,419.0,1 HORA,"[1.3666818, 41.2655697]"
+2,3,Alt Camp,43132,Rodonyà,506.0,1 HORA,"[1.3990724, 41.2826844]"
+2,3,Conca Barb.,43158,Vallclara,88.0,30 MINUTOS,"[0.982585, 41.3774766]"
+2,3,Conca Barb.,43168,Vilanova de Prades,107.0,30 MINUTOS,"[0.9571484, 41.347873]"
+2,3,Alt Camp,43091,Mont-ral,173.0,30 MINUTOS,"[1.0980821, 41.2871207]"
+2,3,Alt Camp,43124,Riba,552.0,1 HORA,"[-3.5603628, 43.2815921]"
+2,3,Conca Barb.,43172,Vilaverd,453.0,1 HORA,"[1.1774773, 41.3346124]"
+2,3,Alt Camp,43066,Garidells,196.0,30 MINUTOS,"[1.2471593, 41.2071322]"
+2,3,Alt Camp,43080,Masó,285.0,1 HORA,"[1.7189708, 41.2226045]"
+2,3,Alt Camp,43083,Milà,189.0,30 MINUTOS,"[4.2664239, 39.911639]"
+2,3,Alt Camp,43160,Vallmoll,1882.0,1 HORA,"[1.2488953, 41.2426301]"
+2,3,Alt Camp,43010,Alió,496.0,1 HORA,"[1.3062666, 41.2935881]"
+2,3,Alt Camp,43034,Bràfim,687.0,1 HORA,"[1.341243, 41.2687867]"
+2,3,Alt Camp,43119,Puigpelat,1199.0,1 HORA,"[1.2970011, 41.2798081]"
+2,3,Alt Camp,43165,Vilabella,711.0,1 HORA,"[1.3298797, 41.2467608]"
+2,3,Alt Camp,43098,Nulles,541.0,1 HORA,"[1.2957338, 41.2492881]"
+2,3,Alt Camp,43134,Rourell,395.0,1 HORA,"[1.2183923, 41.223574]"
+2,4,Baix Camp,43017,Argentera,126.0,30 MINUTOS,"[0.9089999, 41.1376505]"
+2,4,Baix Camp,43033,Botarell,1102.0,1 HORA,"[0.9897786, 41.1362847]"
+2,4,Baix Camp,43045,Colldejou,172.0,30 MINUTOS,"[0.8875766, 41.0991567]"
+2,4,Baix Camp,43118,Pratdip,693.0,1 HORA,"[0.8716047, 41.0515188]"
+2,4,Baix Camp,43127,Riudecanyes,1279.0,1 HORA,"[0.9618942, 41.1303686]"
+2,4,Baix Camp,43167,Vilanova d'Escornalbou,594.0,1 HORA,"[0.9366799, 41.1129833]"
+2,4,Baix Camp,43007,Aleixar,924.0,1 HORA,"[1.0466915, 41.201249]"
+2,4,Baix Camp,43009,Alforja,1928.0,1 HORA,"[0.9750606, 41.2099763]"
+2,4,Baix Camp,43053,Duesaigües,232.0,30 MINUTOS,"[0.9305023, 41.1457974]"
+2,4,Baix Camp,43081,Maspujols,859.0,1 HORA,"[1.0457853, 41.1817965]"
+2,4,Baix Camp,43128,Riudecols,1198.0,1 HORA,"[0.9746249, 41.1680845]"
+2,4,Baix Camp,43015,Arbolí,122.0,30 MINUTOS,"[0.9487676, 41.2425941]"
+2,4,Baix Camp,43039,Capafonts,121.0,30 MINUTOS,"[1.0269673, 41.2948795]"
+2,4,Baix Camp,43057,Febró,39.0,30 MINUTOS,"[1.0032924, 41.2772519]"
+2,4,Baix Camp,43169,Vilaplana,540.0,1 HORA,"[1.0336452, 41.2281084]"
+2,4,Baix Camp,43003,Albiol,528.0,1 HORA,"[1.0897995, 41.2518657]"
+2,4,Baix Camp,43011,Almoster,1334.0,1 HORA,"[1.1111352, 41.1960574]"
+2,4,Tarragonès,43103,Perafort,1292.0,1 HORA,"[1.2564332, 41.1914523]"
+2,4,Tarragonès,43109,Pobla de Mafumet,4052.0,1 HORA,"[1.2082805, 41.1865974]"
+2,4,Tarragonès,43166,Vilallonga del Camp,2398.0,1 HORA,"[1.2074709, 41.2080149]"
+2,4,Tarragonès,43097,Nou de Gaià,636.0,1 HORA,"[1.3738261, 41.1822282]"
+2,4,Tarragonès,43126,Riera de Gaià,1752.0,1 HORA,"[1.9087041, 41.8973646]"
+2,4,Tarragonès,43043,Catllar,4921.0,1 HORA,"[1.3256814, 41.1748794]"
+2,4,Tarragonès,43144,Secuita,1765.0,1 HORA,"[2.1625342, 41.4077814]"
+2,4,Tarragonès,43122,Renau,152.0,30 MINUTOS,"[1.3113308, 41.2249813]"
