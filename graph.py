@@ -336,7 +336,7 @@ def main(plot=False):
 
 	edges_gdf2 = gpd.GeoDataFrame(edges2)
 
-	town_to_coordinates2 = dict(zip(df2['Municipi'], df2['Coordinates2']))
+	town_to_coordinates2 = dict(zip(df2['Municipi'], df2['coordinates']))
 	towns2 = df2["Municipi"].tolist()
 	ordered_coordinates2 = [town_to_coordinates2[town] for town in towns2]
 
