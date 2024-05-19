@@ -1,3 +1,4 @@
+![image](https://github.com/Pikurrot/HackUAB-CE-challenge/blob/main/images/Caixa%20Enginyers.png)
 # HackUAB Caixa d'Enginyers Challenge
 Project for the Caixa d'Enginyers challenge of "UAB the Hack" hackathon 2024 
 
@@ -29,3 +30,44 @@ regions. We did this by searching for api's that would help us determine the    
 distance between cities. And also to determine in real time how much traffic is  <br>
 on the roads to get a better estimation.<br>
 </p>
+
+---
+<p>
+Para empezar a estudiar este problema hemos construido un grafo con datos sacados<br>
+de varias api para tener las distancias entre ciudades. Tambien hemos sido       <br>
+capaces mediante otra api de tener la densidad de trafico actual en las          <br>
+carreteras en timepo real para asi poder calcular mas percisamente el tiempo     <br>
+entre dos lugares.
+</p>
+
+![image](https://github.com/Pikurrot/HackUAB-CE-challenge/blob/main/images/Graph%20without%20paths.png)
+
+<p>
+After that we created an algorithm capable of finding the desired path of the    <br>
+worker given the data we are interested in, this are: starting point, schedule   <br>
+and the places where it needs to be.
+</p>
+
+---
+<p>
+Despues de eso creamos el algoritmo que busca los caminos para el trabajador dado<br> 
+los datos que utilizamos: punto de inicio, horario y el mapa. 
+</p>
+
+![image](https://github.com/Pikurrot/HackUAB-CE-challenge/blob/main/images/Graph%20with%20paths.png)
+
+<p>
+Finally we created an Android app made on Flutter that would allow the           <br>
+hypothetical worker to follow the path to it's destination.
+</p>
+
+---
+<p>
+Finalmente hemos creado una applicaion de Android con Flutter que enseña la ruta<br>
+que seguiria un hipotetico trabajador para llegar a su destino.
+</p>
+
+![image](https://github.com/Pikurrot/HackUAB-CE-challenge/blob/main/images/Map_page.png)
+![image](https://github.com/Pikurrot/HackUAB-CE-challenge/blob/main/images/Map_page_2.png)
+
+
