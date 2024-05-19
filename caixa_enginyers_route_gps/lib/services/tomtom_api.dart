@@ -10,26 +10,23 @@ class TomTomApi {
   static const String api = 'https://api.tomtom.com/';
   static const String apiKey = tomTomApiKey;
 
-  static Future<List<PathModel>> getTomTomRoute(List<LatLng> route) async {
+  static Future<List<LatLng>> getTomTomRoute(List<LatLng> route) async {
     http.Response status = await fetchTomTomRoute(route);
     List<PathModel> sms = PathModel.fromRawJsonList(status.body);
 
     Map<String, dynamic> routes = json.decode(status.body);
     List<dynamic> routeList = routes["routes"];
-    List<List<List<LatLng>>> points = routeList.map((val) {
+    List<LatLng> points = routeList.map((val) {
       List<dynamic> legList = val["legs"];
       return legList.map((leg) {
         List<dynamic> points = leg["points"];
         return points.map((point) =>
           LatLng(point["latitude"], point["longitude"])
         ).toList();
-      }).toList();
-    }).toList();
+      }).expand((i) => i).toList();
+    }).expand((i) => i).toList();
 
-
-    // List<PathModel> values = list.map((val) => PathModel.fromJson(val)).toList();
-
-    return sms;
+    return points;
   }
 
   static Future<http.Response> fetchTomTomRoute(List<LatLng> route) {
