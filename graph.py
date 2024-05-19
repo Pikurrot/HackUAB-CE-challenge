@@ -438,6 +438,7 @@ def main(lot=2, start=None, plot=False):
 	working_time = working_hours * 3600 
 
 	tours_divs2 = []
+	coordinates_divs2 = []
 	for b, block in enumerate(df2_blocks):
 		sum_ = 0
 		divs = []
@@ -449,9 +450,13 @@ def main(lot=2, start=None, plot=False):
 				sum_ = 0
 
 		tours_divs = []
+		coordinates_divs = []
 		for i, j in zip(divs, divs[1:]):
 			tours_divs.append(tours2[b][i:j])
+			coordinates_divs.append(ordered_coordinates2[b][i:j])
+			
 		tours_divs2.append(tours_divs)
+		coordinates_divs2.append(coordinates_divs)
 
 	# Plot the graph on a map
 	if plot:
@@ -477,4 +482,4 @@ def main(lot=2, start=None, plot=False):
 		plt.show()
 
 	# town coordinates by block, town names by block, town names by day by block, total days to complete Lot
-	return ordered_coordinates2, tours2, tours_divs2, sum([len(t) for t in tours_divs2])
+	return ordered_coordinates2, tours2, coordinates_divs2, tours_divs2, sum([len(t) for t in tours_divs2])
