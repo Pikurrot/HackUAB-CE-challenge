@@ -347,7 +347,7 @@ def main(lot=2, start=None, plot=False):
 	blocks = df2['BLOC'].unique()
 	df2_blocks = [df2[df2["BLOC"] == i] for i in blocks]
 	if start is None:
-		start = random.choice(df2[df2["BLOC"] == 1]['Municipi'].tolist())
+		start = random.choice(df2[df2["BLOC"] == blocks[0]]['Municipi'].tolist())
 	start_row = df2[df2['Municipi'] == start]
 	for i, block in enumerate(df2_blocks[1:], start=1):
 		# append start to each block
