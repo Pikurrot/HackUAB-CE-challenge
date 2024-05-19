@@ -9,9 +9,10 @@ enum StopType {
 }
 
 class StopPage extends StatelessWidget {
-  const StopPage({super.key, required this.stopType});
+  const StopPage({super.key, required this.stopType, required this.isClose});
 
   final StopType stopType;
+  final bool isClose;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class StopPage extends StatelessWidget {
       StopType.rest => StopType.service
     };
     String changeTypeString = switch (changeType) {
-      StopType.service => "Parada de Servicio",
+      StopType.service => isClose ? "Parada de Servicio" : "Deshabilitada la parada de servicio",
       StopType.rest => "Descanso"
     };
 
@@ -29,7 +30,7 @@ class StopPage extends StatelessWidget {
         child: Column(
           children: [
             ElevatedButton(
-              child: Text("Resumir"),
+              child: const Text("Continuar viaje"),
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
@@ -38,13 +39,13 @@ class StopPage extends StatelessWidget {
               },
             ),
             ElevatedButton(
+              onPressed: (isClose) ? () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => StopPage(stopType: changeType, isClose: isClose)),
+                );
+              } : null,
               child: Text(changeTypeString),
-                onPressed: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => StopPage(stopType: changeType,)),
-                  );
-              },
             ),
           ],
         )

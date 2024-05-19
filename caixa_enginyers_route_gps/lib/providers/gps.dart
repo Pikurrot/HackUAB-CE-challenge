@@ -4,8 +4,8 @@ import 'package:latlong2/latlong.dart';
 typedef GPSProviderChangeCallback = void Function(LatLng currentPos);
 
 class GPSProvider extends ChangeNotifier {
-
   LatLng _currentPosition = const LatLng(0, 0);
+  bool initialized = false;
 
   GPSProvider();
 
@@ -14,6 +14,7 @@ class GPSProvider extends ChangeNotifier {
   set currentPosition(LatLng p) => _currentPosition = p;
 
   void update(LatLng position) {
+    initialized = true;
     _currentPosition = position;
     onChange?.call(_currentPosition);
     notifyListeners();

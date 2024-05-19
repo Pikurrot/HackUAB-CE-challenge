@@ -1,6 +1,8 @@
 
 
 
+import 'dart:core';
+
 import 'package:caixa_enginyers_route_gps/pages/components/gps_controller.dart';
 import 'package:caixa_enginyers_route_gps/pages/components/map_component.dart';
 import 'package:caixa_enginyers_route_gps/pages/stop_page.dart';
@@ -22,16 +24,19 @@ class _MapPageState extends State<MapPage> {
 
   void initGps(BuildContext context) {
     GPSProvider gpsProvider = Provider.of<GPSProvider>(context, listen: false);
-    gpsProvider.currentPosition = const LatLng(41.73187, 2.26860);
+    if (!gpsProvider.initialized) {
+      gpsProvider.currentPosition = const LatLng(41.73187, 2.26860);
+    }
   }
 
   void loadMap(BuildContext context) async {
     CurrentMap currentMap = Provider.of<CurrentMap>(context, listen: false);
+    GPSProvider gpsProvider = Provider.of<GPSProvider>(context, listen: false);
     currentMap.changeRoutes(
       await CalculateRoutes().calculateRoute([], const LatLng(0, 0))
     );
     currentMap.updateCurrentPositionReturnIfRecalculateNeeded(
-      const LatLng(41.73187, 2.26860)
+      gpsProvider.currentPosition
     );
     currentMap.tryStop();
     setState(() {
@@ -41,7 +46,22 @@ class _MapPageState extends State<MapPage> {
 
   void tryStop(BuildContext context) {
     CurrentMap currentMap = Provider.of<CurrentMap>(context, listen: false);
-    currentMap.tryStop();
+    bool result = currentMap.tryStop();
+    if (result) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const StopPage(stopType: StopType.service, isClose: true,)),
+      );
+    }
+  }
+
+  void tryRest(BuildContext context) {
+    CurrentMap  currentMap = Provider.of<CurrentMap>(context, listen: false);
+    bool isClose = currentMap.getIsCloseToStop();
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => StopPage(stopType: StopType.rest, isClose: isClose)),
+    );
   }
 
   bool loading = true;
@@ -66,27 +86,15 @@ class _MapPageState extends State<MapPage> {
             Column(
               children: [
                 ElevatedButton(
-                  child: const Text('Try Stop'),
+                  child: const Text('Parada de Servicio'),
                   onPressed: () {
                     tryStop(context);
                   }
                 ),
                 ElevatedButton(
-                  child: const Text('Parada de Servicio'),
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => const StopPage(stopType: StopType.service,)),
-                    );
-                  }
-                ),
-                ElevatedButton(
                   child: const Text('Descanso'),
                   onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => const StopPage(stopType: StopType.rest,)),
-                    );
+                    tryRest(context);
                   }
                 ),
                 if (!loading) const GpsControllerWidget()

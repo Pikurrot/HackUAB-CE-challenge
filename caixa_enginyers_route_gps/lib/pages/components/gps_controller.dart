@@ -24,18 +24,22 @@ class GpsControllerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: [
-        Row(children: [
-          ElevatedButton(onPressed: () {setGps(context, const LatLng(41.73187, 2.26860));}, child: const Text("Reset")),
-          ElevatedButton(onPressed: () {moveGps(context, Vector2(0, 1));}, child: const Icon(Icons.arrow_upward))
-        ],),
-        Row(children: [
-          ElevatedButton(onPressed: () {moveGps(context, Vector2(-1, 0));}, child: const Icon(Icons.arrow_left)),
-          ElevatedButton(onPressed: () {moveGps(context, Vector2(0, -1));}, child: const Icon(Icons.arrow_downward)),
-          ElevatedButton(onPressed: () {moveGps(context, Vector2(1, 0));}, child: const Icon(Icons.arrow_right))
-          
-        ],)
+        Column(
+          children: [
+            Row(children: [
+              ElevatedButton(onPressed: () {setGps(context, const LatLng(41.73187, 2.26860));}, child: const Text("Reset")),
+              ElevatedButton(onPressed: () {moveGps(context, Vector2(0, 1));}, child: const Icon(Icons.arrow_upward))
+            ],),
+            Row(children: [
+              ElevatedButton(onPressed: () {moveGps(context, Vector2(-1, 0));}, child: const Icon(Icons.arrow_left)),
+              ElevatedButton(onPressed: () {moveGps(context, Vector2(0, -1));}, child: const Icon(Icons.arrow_downward)),
+              ElevatedButton(onPressed: () {moveGps(context, Vector2(1, 0));}, child: const Icon(Icons.arrow_right))
+              
+            ],)
+          ],
+        ),
       ],
     );
   }

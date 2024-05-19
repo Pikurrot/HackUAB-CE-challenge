@@ -9,8 +9,8 @@ import 'package:latlong2/latlong.dart';
 
 
 class CurrentMap extends ChangeNotifier {
-  static const double pathNodeLimit = 20; // meters
-  static const double stopLimit = 20; // meters
+  static const double pathNodeLimit = 80; // meters
+  static const double stopLimit = 40; // meters
   List<Stop> stopList = [];
   List<List<LatLng>> pathList = [];
   int lastVisitedStop = -1;
@@ -97,24 +97,28 @@ class CurrentMap extends ChangeNotifier {
     return returnValue;
   }
 
-  bool tryStop() {
+  bool getIsCloseToStop() {
+    if ((lastVisitedStop+1) >= stopList.length) return false;
     double dist = const Distance().calculator.distance(currentPosition, stopList[lastVisitedStop+1].position);
-
-    log("Try the stop");
+    log("Distance to stop");
     log("currentPos $currentPosition, neededPos ${stopList[lastVisitedStop+1].position}");
     log("distance $dist");
-
-    bool result = false;
     if (dist > stopLimit) {
-      log("NOOOOOOO");
+      return false;
     } else {
+      return true;
+    }
+  }
+
+  bool tryStop() {
+    log("Try the stop");
+    if (getIsCloseToStop()) {
       lastVisitedStop += 1;
       lastVisitedPathNode = 0;
       notifyListeners();
-      result = true;
+      return true;
+    } else {
+      return false;
     }
-    log("Last visited stop $lastVisitedStop");
-    log("Last visited pathnode $lastVisitedPathNode");
-    return result;
   }
 }

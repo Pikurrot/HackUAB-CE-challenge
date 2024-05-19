@@ -15,6 +15,6 @@ class CeRoutesApi {
   }
 
   static Future<http.Response> fetchStatus() {
-    return http.get(Uri.parse("$api/route1"));
+    return http.get(Uri.parse("$api/lot/2"));
   }
 }
