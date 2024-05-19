@@ -340,9 +340,10 @@ def estancia_to_seconds(estancia):
     else:
         return 0
 
-def main(start=None, plot=False):
+def main(lot=2, start=None, plot=False):
+	assert lot in [2, 4, 5], "Invalid lot number"
 	# Load the data
-	df2 = pd.read_csv('data/Dades_Municipis_Lot_2.csv')
+	df2 = pd.read_csv(f'data/Dades_Municipis_Lot_{lot}.csv')
 	blocks = df2['BLOC'].unique()
 	df2_blocks = [df2[df2["BLOC"] == i] for i in blocks]
 	if start is None:
@@ -362,11 +363,11 @@ def main(start=None, plot=False):
 	# Build the full distance matrix
 	distance_matrices2 = []
 	for i, block in enumerate(df2_blocks):
-		if os.path.exists(f'data/distance_matrix2_{i}.npy'):
-			distance_matrix2 = np.load(f'data/distance_matrix2_{i}.npy')
+		if os.path.exists(f'data/distance_matrix{lot}_{i}.npy'):
+			distance_matrix2 = np.load(f'data/distance_matrix{lot}_{i}.npy')
 		else:
 			distance_matrix2 = build_full_distance_matrix(coordinates2[i])
-			np.save(f'data/distance_matrix2_{i}.npy', distance_matrix2)
+			np.save(f'data/distance_matrix{lot}_{i}.npy', distance_matrix2)
 		distance_matrices2.append(distance_matrix2)
 
 	k = 3
