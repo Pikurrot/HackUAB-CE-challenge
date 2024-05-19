@@ -1,105 +1,105 @@
-LOTE,BLOC,COMARCA,codINE,Municipi,Pob.,Estancia Minima
-5,1,Bages,8242,Marganell,282,1 HORA
-5,1,Baix Llobreg.t,8066,Castellví de Rosanes,2096,1 HORA
-5,1,Baix Llobreg.,8069,Collbató,4726,1 HORA
-5,1,Vallès Occ.,8179,Rellinars,915,1 HORA
-5,1,Vallès Occ.,8290,Ullastrell,2139,1 HORA
-5,1,Maresme,8153,Òrrius,793,1 HORA
-5,1,Vallès Ori.,8256,Santa Maria de Martorelles,889,1 HORA
-5,1,Vallès Ori.,8294,Vallgorguina,3144,1 HORA
-5,1,Vallès Ori.,8306,Vilalba Sasserra,748,1 HORA
-5,1,Vallès Ori.,8039,Campins,557,1 HORA
-5,1,Vallès Ori.,8042,Cànoves i Samalús,3289,1 HORA
-5,1,Vallès Ori.,8081,Fogars de Montclús,493,1 HORA
-5,1,Vallès Ori.,8097,Gualba,1610,1 HORA
-5,1,Vallès Ori.,8234,Sant Pere de Vilamajor,4815,1 HORA
-5,1,Bages,8059,Castellfollit del Boix,460,1 HORA
-5,1,Bages,8061,Castellgalí,2236,1 HORA
-5,1,Bages,8139,Mura,232,30 MINUTOS
-5,1,Bages,8277,Talamanca,219,30 MINUTOS
-5,1,Vallès Occ.,8223,Sant Llorenç Savall,2524,1 HORA
-5,1,Vallès Occ.,8087,Gallifa,186,30 MINUTOS
-5,1,Vallès Ori.,8276,Tagamanent,340,1 HORA
-5,1,Vallès Ori.,8134,Figaró-Montmany,1108,1 HORA
-5,1,Vallès Ori.,8137,Montseny,370,1 HORA
-5,1,Vallès Ori.,8207,Sant Esteve de Palautordera,3043,1 HORA
-5,2,Bages,8002,Aguilar de Segarra,287,1 HORA
-5,2,Bages,8084,Fonollosa,1546,1 HORA
-5,2,Bages,8178,Rajadell,545,1 HORA
-5,2,Bages,8062,Castellnou de Bages,1431,1 HORA
-5,2,Bages,8229,Sant Mateu de Bages,628,1 HORA
-5,2,Moianès,8095,Granera,80,30 MINUTOS
-5,2,Moianès,8128,Monistrol de Calders,742,1 HORA
-5,2,Moianès,8239,Sant Quirze Safaja,672,1 HORA
-5,2,Moianès,8034,Calders,1101,1 HORA
-5,2,Moianès,8055,Castellcir,778,1 HORA
-5,2,Moianès,8070,Collsuspina,398,1 HORA
-5,2,Moianès,8079,Estany,391,1 HORA
-5,2,Bages,8212,Sant Feliu Sasserra,611,1 HORA
-5,2,Berguedà,8308,Viver i Serrateix,166,30 MINUTOS
-5,2,Berguedà,8188,Sagàs,157,30 MINUTOS
-5,2,Berguedà,8255,Santa Maria de Merlès,184,30 MINUTOS
-5,2,Lluçanès,8149,Olost,1206,1 HORA
-5,2,Lluçanès,8151,Oristà,573,1 HORA
-5,2,Lluçanès,8225,Sant Martí d'Albars,119,30 MINUTOS
-5,2,Lluçanès,8271,Sobremunt,83,30 MINUTOS
-5,2,Berguedà,8144,Olvan,876,1 HORA
-5,2,Lluçanès,8109,Lluçà,279,1 HORA
-5,2,Lluçanès,8160,Perafita,418,1 HORA
-5,2,Lluçanès,8004,Alpens,281,1 HORA
-5,3,Osona,8111,Malla,272,1 HORA
-5,3,Osona,8129,Muntanyola,700,1 HORA
-5,3,Osona,8083,Folgueroles,2254,1 HORA
-5,3,Osona,8246,Santa Eugènia de Berga,2256,1 HORA
-5,3,Osona,8247,Santa Eulàlia de Riuprimer,1401,1 HORA
-5,3,Osona,8303,Vilanova de Sau,320,1 HORA
-5,3,Osona,8224,Sant Martí de Centelles,1232,1 HORA
-5,3,Osona,8100,Gurb,2702,1 HORA
-5,3,Osona,8116,Masies de Roda,733,1 HORA
-5,3,Osona,8243,Santa Cecília de Voltregà,185,30 MINUTOS
-5,3,Osona,8280,Tavertet,116,30 MINUTOS
-5,3,Osona,8901,Rupit i Pruit,279,1 HORA
-5,3,Osona,8199,Sant Bartomeu del Grau,924,1 HORA
-5,3,Osona,8117,Masies de Voltregà,3133,1 HORA
-5,3,Osona,8150,Orís,347,1 HORA
-5,3,Osona,8201,Sant Boi de Lluçanès,575,1 HORA
-5,3,Osona,8253,Santa Maria de Besora,159,30 MINUTOS
-5,3,Osona,8265,Sant Vicenç de Torelló,2077,1 HORA
-5,3,Osona,8272,Sora,219,30 MINUTOS
-5,3,Osona,17212,Vidrà,181,30 MINUTOS
-5,3,Osona,8131,Montesquiu,1059,1 HORA
-5,3,Osona,8195,Sant Agustí de Lluçanès,100,30 MINUTOS
-5,3,Osona,8275,Tavèrnoles,329,1 HORA
-5,3,Osona,8241,Sant Sadurní d'Osormort,90,30 MINUTOS
-5,3,Osona,17063,Espinelves,248,30 MINUTOS
-5,3,Osona,8026,Brull,278,1 HORA
-5,4,Berguedà,8078,Espunyola,265,1 HORA
-5,4,Berguedà,8130,Montclar,136,30 MINUTOS
-5,4,Berguedà,8045,Capolat,89,30 MINUTOS
-5,4,Berguedà,8050,Castellar del Riu,175,30 MINUTOS
-5,4,Berguedà,8080,Fígols,45,30 MINUTOS
-5,4,Berguedà,8142,Nou de Berguedà,179,30 MINUTOS
-5,4,Berguedà,8177,Quar,47,30 MINUTOS
-5,4,Berguedà,8299,Vilada,439,1 HORA
-5,4,Ripollès,17096,Llosses,205,30 MINUTOS
-5,4,Ripollès,17170,Vallfogona de Ripollès,222,30 MINUTOS
-5,4,Berguedà,8024,Borredà,448,1 HORA
-5,4,Berguedà,8057,Castell de l'Areny,69,30 MINUTOS
-5,4,Berguedà,8216,Sant Jaume de Frontanyà,31,30 MINUTOS
-5,4,Berguedà,8293,Vallcebre,268,1 HORA
-5,4,Berguedà,8903,Sant Julià de Cerdanyola,241,30 MINUTOS
-5,4,Berguedà,8093,Gisclareny,28,30 MINUTOS
-5,4,Berguedà,8190,Saldes,298,1 HORA
-5,4,Berguedà,25100,Gósol,233,30 MINUTOS
-5,4,Berguedà,8052,Castellar de n'Hug,176,30 MINUTOS
-5,4,Ripollès,17037,Campelles,162,30 MINUTOS
-5,4,Ripollès,17080,Gombrèn,200,30 MINUTOS
-5,4,Ripollès,17134,Planoles,307,1 HORA
-5,4,Ripollès,17201,Toses,185,30 MINUTOS
-5,4,Ripollès,17192,Setcases,200,30 MINUTOS
-5,4,Ripollès,17091,Llanars,533,1 HORA
-5,4,Ripollès,17107,Molló,365,1 HORA
-5,4,Ripollès,17112,Ogassa,222,30 MINUTOS
-5,4,Ripollès,17224,Vilallonga de Ter,410,1 HORA
-5,4,Ripollès,17125,Pardines,165,30 MINUTOS
-5,4,Ripollès,17043,Queralbs,191,30 MINUTOS
+LOTE,BLOC,COMARCA,codINE,Municipi,Pob.,Estancia Minima,coordinates
+5,1,Bages,8242,Marganell,282,1 HORA,"[1.7900194, 41.640666]"
+5,1,Baix Llobreg.t,8066,Castellví de Rosanes,2096,1 HORA,"[1.8994527, 41.450038]"
+5,1,Baix Llobreg.,8069,Collbató,4726,1 HORA,"[1.8285814, 41.570256]"
+5,1,Vallès Occ.,8179,Rellinars,915,1 HORA,"[1.910447, 41.6367945]"
+5,1,Vallès Occ.,8290,Ullastrell,2139,1 HORA,"[1.9560471, 41.5265763]"
+5,1,Maresme,8153,Òrrius,793,1 HORA,"[2.3549387, 41.5551821]"
+5,1,Vallès Ori.,8256,Santa Maria de Martorelles,889,1 HORA,"[2.2537044, 41.5198085]"
+5,1,Vallès Ori.,8294,Vallgorguina,3144,1 HORA,"[2.5100384, 41.6473229]"
+5,1,Vallès Ori.,8306,Vilalba Sasserra,748,1 HORA,"[2.4405379, 41.6530012]"
+5,1,Vallès Ori.,8039,Campins,557,1 HORA,"[2.4640701, 41.7250261]"
+5,1,Vallès Ori.,8042,Cànoves i Samalús,3289,1 HORA,"[2.3382536, 41.7072824]"
+5,1,Vallès Ori.,8081,Fogars de Montclús,493,1 HORA,"[2.4394274, 41.7471607]"
+5,1,Vallès Ori.,8097,Gualba,1610,1 HORA,"[2.5018684, 41.7321147]"
+5,1,Vallès Ori.,8234,Sant Pere de Vilamajor,4815,1 HORA,"[2.3900497, 41.6843288]"
+5,1,Bages,8059,Castellfollit del Boix,460,1 HORA,"[1.6847457, 41.6657331]"
+5,1,Bages,8061,Castellgalí,2236,1 HORA,"[1.8378043, 41.6732765]"
+5,1,Bages,8139,Mura,232,30 MINUTOS,"[1.9764684, 41.6998219]"
+5,1,Bages,8277,Talamanca,219,30 MINUTOS,"[1.9780786, 41.736093]"
+5,1,Vallès Occ.,8223,Sant Llorenç Savall,2524,1 HORA,"[2.0579669, 41.6794647]"
+5,1,Vallès Occ.,8087,Gallifa,186,30 MINUTOS,"[2.1164334, 41.6937007]"
+5,1,Vallès Ori.,8276,Tagamanent,340,1 HORA,"[2.2653485, 41.741256]"
+5,1,Vallès Ori.,8134,Figaró-Montmany,1108,1 HORA,"[2.253646, 41.7098218]"
+5,1,Vallès Ori.,8137,Montseny,370,1 HORA,"[2.3952061, 41.7593697]"
+5,1,Vallès Ori.,8207,Sant Esteve de Palautordera,3043,1 HORA,"[2.4343426, 41.7040768]"
+5,2,Bages,8002,Aguilar de Segarra,287,1 HORA,"[1.6316676, 41.7394902]"
+5,2,Bages,8084,Fonollosa,1546,1 HORA,"[1.6678299, 41.7626001]"
+5,2,Bages,8178,Rajadell,545,1 HORA,"[1.7056275, 41.7291916]"
+5,2,Bages,8062,Castellnou de Bages,1431,1 HORA,"[1.8365127, 41.8348967]"
+5,2,Bages,8229,Sant Mateu de Bages,628,1 HORA,"[1.7327386, 41.7969781]"
+5,2,Moianès,8095,Granera,80,30 MINUTOS,"[2.0570042, 41.7255146]"
+5,2,Moianès,8128,Monistrol de Calders,742,1 HORA,"[2.0146236, 41.7608379]"
+5,2,Moianès,8239,Sant Quirze Safaja,672,1 HORA,"[2.1548204, 41.7276804]"
+5,2,Moianès,8034,Calders,1101,1 HORA,"[1.9916386, 41.7892144]"
+5,2,Moianès,8055,Castellcir,778,1 HORA,"[2.1507238, 41.7615048]"
+5,2,Moianès,8070,Collsuspina,398,1 HORA,"[2.174353, 41.8260718]"
+5,2,Moianès,8079,Estany,391,1 HORA,"[0.3685293, 41.8858007]"
+5,2,Bages,8212,Sant Feliu Sasserra,611,1 HORA,"[2.0213124, 41.9447451]"
+5,2,Berguedà,8308,Viver i Serrateix,166,30 MINUTOS,"[1.801485, 41.9497667]"
+5,2,Berguedà,8188,Sagàs,157,30 MINUTOS,"[1.9626051, 42.0510214]"
+5,2,Berguedà,8255,Santa Maria de Merlès,184,30 MINUTOS,"[1.9778885, 42.0007572]"
+5,2,Lluçanès,8149,Olost,1206,1 HORA,"[2.0941372, 41.9851518]"
+5,2,Lluçanès,8151,Oristà,573,1 HORA,"[2.0599756, 41.9327257]"
+5,2,Lluçanès,8225,Sant Martí d'Albars,119,30 MINUTOS,"[2.0742512, 42.0281258]"
+5,2,Lluçanès,8271,Sobremunt,83,30 MINUTOS,"[2.165156, 42.0353017]"
+5,2,Berguedà,8144,Olvan,876,1 HORA,"[1.9064046, 42.0571091]"
+5,2,Lluçanès,8109,Lluçà,279,1 HORA,"[2.0482158, 42.0671674]"
+5,2,Lluçanès,8160,Perafita,418,1 HORA,"[2.107122, 42.0423757]"
+5,2,Lluçanès,8004,Alpens,281,1 HORA,"[2.101673, 42.1195348]"
+5,3,Osona,8111,Malla,272,1 HORA,"[2.2354564, 41.887016]"
+5,3,Osona,8129,Muntanyola,700,1 HORA,"[2.1790836, 41.8769342]"
+5,3,Osona,8083,Folgueroles,2254,1 HORA,"[2.3180742, 41.9392868]"
+5,3,Osona,8246,Santa Eugènia de Berga,2256,1 HORA,"[2.283319, 41.9000058]"
+5,3,Osona,8247,Santa Eulàlia de Riuprimer,1401,1 HORA,"[2.1886023, 41.9109533]"
+5,3,Osona,8303,Vilanova de Sau,320,1 HORA,"[2.383405, 41.9476741]"
+5,3,Osona,8224,Sant Martí de Centelles,1232,1 HORA,"[2.2195762, 41.7540904]"
+5,3,Osona,8100,Gurb,2702,1 HORA,"[2.2433019, 41.9409869]"
+5,3,Osona,8116,Masies de Roda,733,1 HORA,"[2.3064465, 41.9900725]"
+5,3,Osona,8243,Santa Cecília de Voltregà,185,30 MINUTOS,"[2.222325, 41.9930549]"
+5,3,Osona,8280,Tavertet,116,30 MINUTOS,"[2.4182542, 41.995547]"
+5,3,Osona,8901,Rupit i Pruit,279,1 HORA,"[2.4653919, 42.024334]"
+5,3,Osona,8199,Sant Bartomeu del Grau,924,1 HORA,"[2.1750391, 41.9807659]"
+5,3,Osona,8117,Masies de Voltregà,3133,1 HORA,"[2.2347147, 42.0267288]"
+5,3,Osona,8150,Orís,347,1 HORA,"[2.2122605, 42.065576]"
+5,3,Osona,8201,Sant Boi de Lluçanès,575,1 HORA,"[2.1511135, 42.0578411]"
+5,3,Osona,8253,Santa Maria de Besora,159,30 MINUTOS,"[2.2589189, 42.1272818]"
+5,3,Osona,8265,Sant Vicenç de Torelló,2077,1 HORA,"[2.272337, 42.0630229]"
+5,3,Osona,8272,Sora,219,30 MINUTOS,"[2.1610531, 42.1119353]"
+5,3,Osona,17212,Vidrà,181,30 MINUTOS,"[2.3106778, 42.1228239]"
+5,3,Osona,8131,Montesquiu,1059,1 HORA,"[2.2086111, 42.108728]"
+5,3,Osona,8195,Sant Agustí de Lluçanès,100,30 MINUTOS,"[2.1272825, 42.0855048]"
+5,3,Osona,8275,Tavèrnoles,329,1 HORA,"[2.3263016, 41.9520757]"
+5,3,Osona,8241,Sant Sadurní d'Osormort,90,30 MINUTOS,"[2.3815562, 41.9019288]"
+5,3,Osona,17063,Espinelves,248,30 MINUTOS,"[2.4173566, 41.8689558]"
+5,3,Osona,8026,Brull,278,1 HORA,"[2.3052283, 41.8168099]"
+5,4,Berguedà,8078,Espunyola,265,1 HORA,"[1.7733927, 42.0523207]"
+5,4,Berguedà,8130,Montclar,136,30 MINUTOS,"[1.7653302, 42.018173]"
+5,4,Berguedà,8045,Capolat,89,30 MINUTOS,"[1.752867, 42.0776191]"
+5,4,Berguedà,8050,Castellar del Riu,175,30 MINUTOS,"[1.7549529, 42.1273226]"
+5,4,Berguedà,8080,Fígols,45,30 MINUTOS,"[1.8366637, 42.1809467]"
+5,4,Berguedà,8142,Nou de Berguedà,179,30 MINUTOS,"[1.8845378, 42.1663902]"
+5,4,Berguedà,8177,Quar,47,30 MINUTOS,"[1.9807775, 42.1050263]"
+5,4,Berguedà,8299,Vilada,439,1 HORA,"[1.9315206, 42.1369132]"
+5,4,Ripollès,17096,Llosses,205,30 MINUTOS,"[2.1166718, 42.1506279]"
+5,4,Ripollès,17170,Vallfogona de Ripollès,222,30 MINUTOS,"[2.3036247, 42.1963139]"
+5,4,Berguedà,8024,Borredà,448,1 HORA,"[1.9941054, 42.1355536]"
+5,4,Berguedà,8057,Castell de l'Areny,69,30 MINUTOS,"[1.9454439, 42.1732169]"
+5,4,Berguedà,8216,Sant Jaume de Frontanyà,31,30 MINUTOS,"[2.0238488, 42.1874392]"
+5,4,Berguedà,8293,Vallcebre,268,1 HORA,"[1.818818, 42.2036044]"
+5,4,Berguedà,8903,Sant Julià de Cerdanyola,241,30 MINUTOS,"[1.8921354, 42.2234097]"
+5,4,Berguedà,8093,Gisclareny,28,30 MINUTOS,"[1.7866137, 42.249978]"
+5,4,Berguedà,8190,Saldes,298,1 HORA,"[1.7349486, 42.2287591]"
+5,4,Berguedà,25100,Gósol,233,30 MINUTOS,"[1.6605511, 42.2365129]"
+5,4,Berguedà,8052,Castellar de n'Hug,176,30 MINUTOS,"[2.0165927, 42.2826009]"
+5,4,Ripollès,17037,Campelles,162,30 MINUTOS,"[2.1405635, 42.2946353]"
+5,4,Ripollès,17080,Gombrèn,200,30 MINUTOS,"[2.0905975, 42.2484304]"
+5,4,Ripollès,17134,Planoles,307,1 HORA,"[2.1029743, 42.3148273]"
+5,4,Ripollès,17201,Toses,185,30 MINUTOS,"[2.0168227, 42.3218595]"
+5,4,Ripollès,17192,Setcases,200,30 MINUTOS,"[2.3016103, 42.375331]"
+5,4,Ripollès,17091,Llanars,533,1 HORA,"[2.3435638, 42.3197051]"
+5,4,Ripollès,17107,Molló,365,1 HORA,"[2.4043962, 42.3485369]"
+5,4,Ripollès,17112,Ogassa,222,30 MINUTOS,"[2.2777794, 42.2656267]"
+5,4,Ripollès,17224,Vilallonga de Ter,410,1 HORA,"[2.3125292, 42.331497]"
+5,4,Ripollès,17125,Pardines,165,30 MINUTOS,"[2.2139864, 42.312731]"
+5,4,Ripollès,17043,Queralbs,191,30 MINUTOS,"[2.1632838, 42.3495722]"

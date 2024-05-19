@@ -1,107 +1,107 @@
-LOTE,BLOC,COMARCA,codINE,Municipi,Pob.,Estancia Minima
-4,4,Gironès,17038,Campllong,535,1 HORA
-4,4,Gironès,17090,Llambilles,731,1 HORA
-4,4,Gironès,17157,Sant Andreu Salou,162,30 MINUTOS
-4,4,Selva,17101,Massanes,825,1 HORA
-4,4,Selva,17159,Sant Feliu de Buixalleu,839,1 HORA
-4,4,Gironès,17002,Aiguaviva,780,1 HORA
-4,4,Gironès,17172,Sant Martí de Llémena,679,1 HORA
-4,4,Selva,17028,Brunyola i Sant Martí Sapresa,388,1 HORA
-4,4,Selva,17116,Osor,423,1 HORA
-4,4,Selva,17194,Susqueda,96,30 MINUTOS
+LOTE,BLOC,COMARCA,codINE,Municipi,Pob.,Estancia Minima,coordinates
+4,4,Gironès,17038,Campllong,535,1 HORA,"[2.8309625, 41.8948831]"
+4,4,Gironès,17090,Llambilles,731,1 HORA,"[2.851079, 41.9215695]"
+4,4,Gironès,17157,Sant Andreu Salou,162,30 MINUTOS,"[2.8254449, 41.8732667]"
+4,4,Selva,17101,Massanes,825,1 HORA,"[2.6528719, 41.7654696]"
+4,4,Selva,17159,Sant Feliu de Buixalleu,839,1 HORA,"[2.5861463, 41.7913017]"
+4,4,Gironès,17002,Aiguaviva,780,1 HORA,"[2.7624155, 41.9382389]"
+4,4,Gironès,17172,Sant Martí de Llémena,679,1 HORA,"[2.6475329, 42.0364324]"
+4,4,Selva,17028,Brunyola i Sant Martí Sapresa,388,1 HORA,"[2.6839536, 41.9049114]"
+4,4,Selva,17116,Osor,423,1 HORA,"[2.5569285, 41.9451025]"
+4,4,Selva,17194,Susqueda,96,30 MINUTOS,"[2.5131351, 41.9983697]"
 4,4,Pla Estany,17174,"Sant Miquel de
-Campmajor",239,30 MINUTOS
-4,2,Garrotxa,17105,Mieres,341,1 HORA
-4,2,Garrotxa,17183,Sant Aniol de Finestres,363,1 HORA
-4,4,Gironès,17040,Canet d'Adri,750,1 HORA
-4,4,Pla Estany,17035,Camós,715,1 HORA
-4,3,Baix Empordà,17121,Palau-sator,327,1 HORA
-4,3,Baix Empordà,17144,Regencós,271,1 HORA
-4,3,Baix Empordà,17209,Vall-llobrega,926,1 HORA
+Campmajor",239,30 MINUTOS,"[2.6799054, 42.1542245]"
+4,2,Garrotxa,17105,Mieres,341,1 HORA,"[-5.7722468, 43.2488161]"
+4,2,Garrotxa,17183,Sant Aniol de Finestres,363,1 HORA,"[2.6084554, 42.0694431]"
+4,4,Gironès,17040,Canet d'Adri,750,1 HORA,"[2.7377666, 42.0332009]"
+4,4,Pla Estany,17035,Camós,715,1 HORA,"[2.7674256, 42.0938831]"
+4,3,Baix Empordà,17121,Palau-sator,327,1 HORA,"[3.1103856, 41.9897891]"
+4,3,Baix Empordà,17144,Regencós,271,1 HORA,"[3.1687852, 41.9523563]"
+4,3,Baix Empordà,17209,Vall-llobrega,926,1 HORA,"[3.1268338, 41.8801015]"
 4,3,Baix Empordà,17901,"Cruïlles, Monells i Sant
-Sadurní de l'Heura",1338,1 HORA
-4,3,Baix Empordà,17902,Forallac,1765,1 HORA
-4,3,Baix Empordà,17126,Parlavà,415,1 HORA
-4,3,Baix Empordà,17130,Pera,438,1 HORA
-4,3,Baix Empordà,17153,Rupià,300,1 HORA
-4,4,Gironès,17087,Juià,334,1 HORA
-4,4,Gironès,17097,Madremanya,302,1 HORA
-4,4,Gironès,17173,Sant Martí Vell,261,1 HORA
-4,3,Baix Empordà,17057,Corçà,1268,1 HORA
-4,3,Baix Empordà,17068,Foixà,288,1 HORA
-4,3,Baix Empordà,17070,Fontanilles,163,30 MINUTOS
-4,3,Baix Empordà,17081,Gualta,439,1 HORA
-4,3,Baix Empordà,17191,Serra de Daró,233,30 MINUTOS
-4,3,Baix Empordà,17204,Ullà,1195,1 HORA
-4,3,Baix Empordà,17055,Colomers,204,30 MINUTOS
-4,3,Baix Empordà,17076,Garrigoles,177,30 MINUTOS
-4,3,Baix Empordà,17195,Tallada d'Empordà,480,1 HORA
-4,3,Baix Empordà,17232,Vilopriu,223,30 MINUTOS
-4,4,Gironès,17050,Cervià de Ter,999,1 HORA
-4,4,Pla Estany,17123,Palol de Revardit,457,1 HORA
-4,3,Alt Empordà,17210,Ventalló,911,1 HORA
-4,3,Alt Empordà,17217,Viladamat,479,1 HORA
-4,3,Baix Empordà,17004,Albons,797,1 HORA
-4,3,Baix Empordà,17018,Bellcaire d'Empordà,713,1 HORA
-4,1,Alt Empordà,17175,Sant Miquel de Fluvià,808,1 HORA
-4,1,Alt Empordà,17198,Torroella de Fluvià,741,1 HORA
-4,1,Alt Empordà,17222,Vilaür,162,30 MINUTOS
-4,1,Alt Empordà,17225,Vilamacolum,386,1 HORA
-4,4,Pla Estany,17218,Vilademuls,840,1 HORA
-4,2,Garrotxa,17098,Maià de Montcal,462,1 HORA
-4,2,Garrotxa,17162,Sant Ferriol,256,1 HORA
-4,4,Pla Estany,17058,Crespià,276,1 HORA
-4,4,Pla Estany,17065,Esponellà,489,1 HORA
-4,4,Pla Estany,17071,Fontcoberta,1466,1 HORA
-4,2,Garrotxa,17010,Argelaguer,439,1 HORA
-4,2,Garrotxa,17149,Riudaura,511,1 HORA
-4,2,Garrotxa,17165,Sant Jaume de Llierca,842,1 HORA
-4,2,Garrotxa,17208,Vall de Bianya,1345,1 HORA
-4,2,Alt Empordà,17003,Albanyà,180,30 MINUTOS
-4,2,Garrotxa,17109,Montagut i Oix,958,1 HORA
-4,2,Garrotxa,17154,Sales de Llierca,169,30 MINUTOS
-4,2,Garrotxa,17200,Tortellà,823,1 HORA
-4,1,Alt Empordà,17026,Borrassà,776,1 HORA
-4,1,Alt Empordà,17052,Siurana,178,30 MINUTOS
-4,1,Alt Empordà,17075,Garrigàs,458,1 HORA
-4,2,Alt Empordà,17111,Navata,1465,1 HORA
-4,1,Alt Empordà,17005,Far d'Empordà,625,1 HORA
-4,1,Alt Empordà,17074,Fortià,778,1 HORA
-4,1,Alt Empordà,17151,Riumors,244,30 MINUTOS
-4,1,Alt Empordà,17182,Santa Llogaia d'Àlguema,379,1 HORA
-4,1,Alt Empordà,17230,Vila-sacra,785,1 HORA
-4,1,Alt Empordà,17030,Cabanes,949,1 HORA
-4,1,Alt Empordà,17128,Pau,579,1 HORA
-4,1,Alt Empordà,17129,Pedret i Marzà,181,30 MINUTOS
-4,1,Alt Empordà,17188,Selva de Mar,220,30 MINUTOS
-4,1,Alt Empordà,17012,Avinyonet de Puigventós,1676,1 HORA
-4,2,Alt Empordà,17031,Cabanelles,279,1 HORA
-4,2,Alt Empordà,17088,Lladó,827,1 HORA
-4,2,Alt Empordà,17228,Vilanant,401,1 HORA
-4,2,Alt Empordà,17029,Boadella i les Escaules,258,1 HORA
-4,2,Alt Empordà,17051,Cistella,307,1 HORA
-4,2,Alt Empordà,17171,Sant Llorenç de la Muga,267,1 HORA
-4,2,Alt Empordà,17196,Terrades,345,1 HORA
-4,1,Alt Empordà,17100,Masarac,294,1 HORA
-4,1,Alt Empordà,17106,Mollet de Peralada,202,30 MINUTOS
-4,2,Alt Empordà,17042,Capmany,672,1 HORA
-4,2,Alt Empordà,17135,Pont de Molins,542,1 HORA
-4,1,Alt Empordà,17064,Espolla,408,1 HORA
-4,1,Alt Empordà,17143,Rabós,210,30 MINUTOS
-4,1,Alt Empordà,17227,Vilamaniscle,204,30 MINUTOS
-4,2,Alt Empordà,17014,Vajol,87,30 MINUTOS
-4,2,Alt Empordà,17041,Cantallops,330,1 HORA
-4,1,Alt Empordà,17115,Ordis,373,1 HORA
-4,1,Alt Empordà,17119,Palau de Santa Eulàlia,115,30 MINUTOS
-4,1,Alt Empordà,17136,Pontós,274,1 HORA
-4,1,Alt Empordà,17221,Vilafant,5562,1 HORA
-4,1,Alt Empordà,17226,Vilamalla,1166,1 HORA
-4,2,Alt Empordà,17234,Biure,249,30 MINUTOS
-4,2,Garrotxa,17021,Beuda,202,30 MINUTOS
-4,3,Baix Empordà,17085,Jafre,386,1 HORA
-4,3,Baix Empordà,17197,Torrent,166,30 MINUTOS
-4,3,Baix Empordà,17203,Ultramort,224,30 MINUTOS
-4,3,Baix Empordà,17205,Ullastret,250,1 HORA
-4,4,Gironès,17168,Sant Joan de Mollet,515,1 HORA
-4,4,Gironès,17216,Viladasens,216,30 MINUTOS
-4,4,Selva,8082,Fogars de la Selva,1564,1 HORA
+Sadurní de l'Heura",1338,1 HORA,"[3.0062167, 41.9481746]"
+4,3,Baix Empordà,17902,Forallac,1765,1 HORA,"[3.0817246, 41.9405813]"
+4,3,Baix Empordà,17126,Parlavà,415,1 HORA,"[3.0304741, 42.022591]"
+4,3,Baix Empordà,17130,Pera,438,1 HORA,"[2.4938967, 42.283914]"
+4,3,Baix Empordà,17153,Rupià,300,1 HORA,"[3.0105902, 42.0207872]"
+4,4,Gironès,17087,Juià,334,1 HORA,"[2.9067184, 42.0172969]"
+4,4,Gironès,17097,Madremanya,302,1 HORA,"[2.9568764, 41.9900799]"
+4,4,Gironès,17173,Sant Martí Vell,261,1 HORA,"[2.9311901, 42.0196093]"
+4,3,Baix Empordà,17057,Corçà,1268,1 HORA,"[3.0170799, 41.9893624]"
+4,3,Baix Empordà,17068,Foixà,288,1 HORA,"[2.9973628, 42.0388268]"
+4,3,Baix Empordà,17070,Fontanilles,163,30 MINUTOS,"[3.1065584, 42.0111362]"
+4,3,Baix Empordà,17081,Gualta,439,1 HORA,"[3.1037954, 42.029638]"
+4,3,Baix Empordà,17191,Serra de Daró,233,30 MINUTOS,"[3.0728658, 42.028087]"
+4,3,Baix Empordà,17204,Ullà,1195,1 HORA,"[3.1073899, 42.0500542]"
+4,3,Baix Empordà,17055,Colomers,204,30 MINUTOS,"[2.9870811, 42.0841561]"
+4,3,Baix Empordà,17076,Garrigoles,177,30 MINUTOS,"[3.030074, 42.1071682]"
+4,3,Baix Empordà,17195,Tallada d'Empordà,480,1 HORA,"[3.0555614, 42.0798863]"
+4,3,Baix Empordà,17232,Vilopriu,223,30 MINUTOS,"[2.9918548, 42.1043198]"
+4,4,Gironès,17050,Cervià de Ter,999,1 HORA,"[2.9122136, 42.0676956]"
+4,4,Pla Estany,17123,Palol de Revardit,457,1 HORA,"[2.7958985, 42.0694953]"
+4,3,Alt Empordà,17210,Ventalló,911,1 HORA,"[3.0268953, 42.1491351]"
+4,3,Alt Empordà,17217,Viladamat,479,1 HORA,"[3.0753648, 42.1327669]"
+4,3,Baix Empordà,17004,Albons,797,1 HORA,"[3.0849746, 42.1058271]"
+4,3,Baix Empordà,17018,Bellcaire d'Empordà,713,1 HORA,"[3.0944347, 42.0810857]"
+4,1,Alt Empordà,17175,Sant Miquel de Fluvià,808,1 HORA,"[2.9904591, 42.1732143]"
+4,1,Alt Empordà,17198,Torroella de Fluvià,741,1 HORA,"[3.0402489, 42.174492]"
+4,1,Alt Empordà,17222,Vilaür,162,30 MINUTOS,"[2.9550356, 42.1437984]"
+4,1,Alt Empordà,17225,Vilamacolum,386,1 HORA,"[3.0571146, 42.1965528]"
+4,4,Pla Estany,17218,Vilademuls,840,1 HORA,"[2.8879149, 42.138644]"
+4,2,Garrotxa,17098,Maià de Montcal,462,1 HORA,"[2.7431144, 42.2221769]"
+4,2,Garrotxa,17162,Sant Ferriol,256,1 HORA,"[2.6783028, 42.1868577]"
+4,4,Pla Estany,17058,Crespià,276,1 HORA,"[2.7982926, 42.1877796]"
+4,4,Pla Estany,17065,Esponellà,489,1 HORA,"[2.7955223, 42.1773757]"
+4,4,Pla Estany,17071,Fontcoberta,1466,1 HORA,"[2.7897817, 42.1425379]"
+4,2,Garrotxa,17010,Argelaguer,439,1 HORA,"[2.6414922, 42.2145207]"
+4,2,Garrotxa,17149,Riudaura,511,1 HORA,"[2.4093804, 42.1887348]"
+4,2,Garrotxa,17165,Sant Jaume de Llierca,842,1 HORA,"[2.6074259, 42.2119833]"
+4,2,Garrotxa,17208,Vall de Bianya,1345,1 HORA,"[2.4326305, 42.2415207]"
+4,2,Alt Empordà,17003,Albanyà,180,30 MINUTOS,"[2.7201116, 42.3049568]"
+4,2,Garrotxa,17109,Montagut i Oix,958,1 HORA,"[2.5967415, 42.2309257]"
+4,2,Garrotxa,17154,Sales de Llierca,169,30 MINUTOS,"[2.6499657, 42.2358533]"
+4,2,Garrotxa,17200,Tortellà,823,1 HORA,"[2.630869, 42.233331]"
+4,1,Alt Empordà,17026,Borrassà,776,1 HORA,"[2.9268828, 42.2224982]"
+4,1,Alt Empordà,17052,Siurana,178,30 MINUTOS,"[2.9940216, 42.2095097]"
+4,1,Alt Empordà,17075,Garrigàs,458,1 HORA,"[2.9539294, 42.1929222]"
+4,2,Alt Empordà,17111,Navata,1465,1 HORA,"[2.8584815, 42.2248425]"
+4,1,Alt Empordà,17005,Far d'Empordà,625,1 HORA,"[2.9950531, 42.2511773]"
+4,1,Alt Empordà,17074,Fortià,778,1 HORA,"[3.0404198, 42.2424345]"
+4,1,Alt Empordà,17151,Riumors,244,30 MINUTOS,"[3.0420591, 42.2269331]"
+4,1,Alt Empordà,17182,Santa Llogaia d'Àlguema,379,1 HORA,"[2.9523456, 42.2333519]"
+4,1,Alt Empordà,17230,Vila-sacra,785,1 HORA,"[3.0170438, 42.2668061]"
+4,1,Alt Empordà,17030,Cabanes,949,1 HORA,"[2.9764243, 42.3087348]"
+4,1,Alt Empordà,17128,Pau,579,1 HORA,"[3.1161931, 42.3161009]"
+4,1,Alt Empordà,17129,Pedret i Marzà,181,30 MINUTOS,"[3.0706399, 42.3078129]"
+4,1,Alt Empordà,17188,Selva de Mar,220,30 MINUTOS,"[2.2091455, 41.4079859]"
+4,1,Alt Empordà,17012,Avinyonet de Puigventós,1676,1 HORA,"[2.9145442, 42.2499757]"
+4,2,Alt Empordà,17031,Cabanelles,279,1 HORA,"[2.8187019, 42.2302177]"
+4,2,Alt Empordà,17088,Lladó,827,1 HORA,"[2.8120781, 42.2478898]"
+4,2,Alt Empordà,17228,Vilanant,401,1 HORA,"[2.8897248, 42.2544997]"
+4,2,Alt Empordà,17029,Boadella i les Escaules,258,1 HORA,"[2.8583208, 42.3324603]"
+4,2,Alt Empordà,17051,Cistella,307,1 HORA,"[2.8472717, 42.268711]"
+4,2,Alt Empordà,17171,Sant Llorenç de la Muga,267,1 HORA,"[2.7888647, 42.3199618]"
+4,2,Alt Empordà,17196,Terrades,345,1 HORA,"[2.8381619, 42.3106341]"
+4,1,Alt Empordà,17100,Masarac,294,1 HORA,"[2.9723618, 42.3509939]"
+4,1,Alt Empordà,17106,Mollet de Peralada,202,30 MINUTOS,"[2.9999085, 42.3595501]"
+4,2,Alt Empordà,17042,Capmany,672,1 HORA,"[2.9206405, 42.3732813]"
+4,2,Alt Empordà,17135,Pont de Molins,542,1 HORA,"[2.9304359, 42.3148493]"
+4,1,Alt Empordà,17064,Espolla,408,1 HORA,"[2.9994355, 42.3893146]"
+4,1,Alt Empordà,17143,Rabós,210,30 MINUTOS,"[3.0283472, 42.3787458]"
+4,1,Alt Empordà,17227,Vilamaniscle,204,30 MINUTOS,"[3.067464, 42.3743918]"
+4,2,Alt Empordà,17014,Vajol,87,30 MINUTOS,"[2.800086, 42.4039078]"
+4,2,Alt Empordà,17041,Cantallops,330,1 HORA,"[2.9248575, 42.4235685]"
+4,1,Alt Empordà,17115,Ordis,373,1 HORA,"[2.9072143, 42.2185591]"
+4,1,Alt Empordà,17119,Palau de Santa Eulàlia,115,30 MINUTOS,"[2.9646635, 42.1734468]"
+4,1,Alt Empordà,17136,Pontós,274,1 HORA,"[2.9172363, 42.1858949]"
+4,1,Alt Empordà,17221,Vilafant,5562,1 HORA,"[2.9418008, 42.2515266]"
+4,1,Alt Empordà,17226,Vilamalla,1166,1 HORA,"[2.9708293, 42.2165982]"
+4,2,Alt Empordà,17234,Biure,249,30 MINUTOS,"[2.8949823, 42.3380996]"
+4,2,Garrotxa,17021,Beuda,202,30 MINUTOS,"[2.7097379, 42.2372601]"
+4,3,Baix Empordà,17085,Jafre,386,1 HORA,"[3.0107448, 42.0726347]"
+4,3,Baix Empordà,17197,Torrent,166,30 MINUTOS,"[-0.4656213, 39.436668]"
+4,3,Baix Empordà,17203,Ultramort,224,30 MINUTOS,"[3.0349373, 42.037127]"
+4,3,Baix Empordà,17205,Ullastret,250,1 HORA,"[3.0689759, 42.0008975]"
+4,4,Gironès,17168,Sant Joan de Mollet,515,1 HORA,"[2.941985, 42.0442275]"
+4,4,Gironès,17216,Viladasens,216,30 MINUTOS,"[2.9294718, 42.0951146]"
+4,4,Selva,8082,Fogars de la Selva,1564,1 HORA,"[2.6728108, 41.7342133]"
