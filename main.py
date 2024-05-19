@@ -48,9 +48,11 @@ def getRoute(lot):
 		
 	return json.dumps(towns)
 
-@app.route("/lot/<lot>/days")
-def getRouteDays(lot):
+@app.route("/lot/<lot>/days/<b>/<d>")
+def getRouteDays(lot, b, d):
 	lot = int(lot)
+	b = int(b)
+	d = int(d)
 	if not lot in LOTS:
 		return
 	
@@ -63,10 +65,10 @@ def getRouteDays(lot):
 		locations[coord] = [town, int(pob)]
 
 	towns = []
-	for b, block in enumerate(coordinates_divs):
-		for day in block:
-			for coord in day:
-				towns.append({"location":locations[str(coord)][0], "population":locations[str(coord)][1], "coordinates":coord})
+	block = coordinates_divs[b]
+	day = block[d]
+	for coord in day:
+		towns.append({"location":locations[str(coord)][0], "population":locations[str(coord)][1], "coordinates":coord})
 		
 	return json.dumps(towns)
 
